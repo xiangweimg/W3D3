@@ -48,3 +48,16 @@ p deep_dup([[1,2],[1,2,3]])
 
 p "Fibonacci"
 
+def fibonacci_num(n)
+    return [0] if n == 1
+    return [0, 1] if n == 2
+    fibonacci_num(n - 1) << fibonacci_num(n - 1)[-1] + fibonacci_num(n - 2)[-1]
+end
+
+def fibonacci_num2(n)
+    head = [0, 1]
+    
+end
+
+p fibonacci_num(5)
+p fibonacci_num(8)
